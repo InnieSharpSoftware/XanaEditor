@@ -74,12 +74,12 @@ namespace XanaEditor
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("color "))
 				{
-					Range rng = new Range(fastColoredTextBox1, 0, i, 10, i);
+					Range rng = new Range(fastColoredTextBox1, 0, i, 6, i);
 		    		rng.SetStyle(BlueStyle);
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("var "))
 				{
-					Range rng = new Range(fastColoredTextBox1, 0, i, 9, i);
+					Range rng = new Range(fastColoredTextBox1, 0, i, 4, i);
 		    		rng.SetStyle(RedStyle);
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("caption "))
@@ -134,7 +134,7 @@ namespace XanaEditor
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("wait "))
 				{
-					Range rng = new Range(fastColoredTextBox1, 0, i, 7, i);
+					Range rng = new Range(fastColoredTextBox1, 0, i, 5, i);
 		    		rng.SetStyle(BlueStyle);
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("readfile "))
