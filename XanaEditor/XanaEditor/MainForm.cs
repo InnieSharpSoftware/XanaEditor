@@ -89,7 +89,7 @@ namespace XanaEditor
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("math "))
 				{
-					Range rng = new Range(fastColoredTextBox1, 0, i, 6, i);
+					Range rng = new Range(fastColoredTextBox1, 0, i, 5, i);
 		    		rng.SetStyle(RedStyle);
 				}
 				else if(fastColoredTextBox1.Lines[i].ToLower().StartsWith("set "))
